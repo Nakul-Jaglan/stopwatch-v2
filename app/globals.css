@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,body{
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  background: linear-gradient(to right, #FA7921, #FDE74C);
+}
+
+.title{
+  text-align: center;
+  font-size: 3em;
+  border-bottom: 3px solid #000;
+}
+
+.stopwatch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3em;
+  background-color: #E55934;
+  width: 30%;
+  margin: 5% auto;
+  padding: 3%;
+}
+
+.btn{
+  background-color: #9BC53D;
+  color: white;
+  border-color: #9BC53D;
+  padding: 2% 3%;
+  font-size: 1.05em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn:hover{
+  background-color: #6DAA2D;
+  border-color: #6DAA2D;
+}
+
+.btn:active{
+  background-color: #4B8A1D;
+  border-color: #4B8A1D;
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
+.stopwatch-controls{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.stopwatch-display h1{
+  font-size: 1.45em;
+  margin-top: 0;
+}
+
+footer p{
+  text-align: center;
+  font-size: 1.2em;
+}
+
+@media (max-width: 480px) {
+  .stopwatch{
+    width: 90%;
+  }
+  .btn{
+    width: 100%;
+    margin: 5% auto;
+  }
+  .stopwatch-controls{
+    flex-direction: column;
+    align-items: center;
+  }
+  .stopwatch-controls button{
+    width: 100%;
+    margin: 5% auto;
+  }
+  .stopwatch-display h1{
+    font-size: 1.05em;
+  }
+  .title{
+    font-size: 2em;
+    border-bottom: 3px solid #000;
+  }
+  footer p{
+    font-size: 1.1em;
+  }
+}
